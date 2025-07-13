@@ -62,7 +62,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 rounded-full bg-gradient-to-br from-accent/20 to-accent/40 p-2">
                 <img
-                  src={profilePhoto}
+                  src="/lovable-uploads/dfc1ad83-77fe-4b37-8dc9-1c9bf5efbe6d.png"
                   alt="Dhanush Kumar S R"
                   className="w-full h-full rounded-full object-cover"
                 />

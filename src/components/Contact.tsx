@@ -23,12 +23,6 @@ const Contact = () => {
       href: "tel:+919916705053"
     },
     {
-      icon: MapPin,
-      label: "Location",
-      value: "Chikkaballapur-562101, Karnataka, India",
-      href: null
-    },
-    {
       icon: Linkedin,
       label: "LinkedIn",
       value: "linkedin.com/in/dhanush-kumar-11b994333",
@@ -96,9 +90,11 @@ const Contact = () => {
                 <p className="text-muted-foreground mb-4">
                   Get a detailed overview of my experience, skills, and projects.
                 </p>
-                <Button className="w-full bg-accent hover:bg-accent/90">
-                  <Download className="w-4 h-4 mr-2" />
-                  Download PDF Resume
+                <Button className="w-full bg-accent hover:bg-accent/90" asChild>
+                  <a href="https://drive.google.com/file/d/11sSzZ7FnQXbuOEUFN35UVMPMWBIXVQ85/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                    <Download className="w-4 h-4 mr-2" />
+                    Download PDF Resume
+                  </a>
                 </Button>
               </CardContent>
             </Card>
