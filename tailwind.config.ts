@@ -52,6 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				portfolio: {
+					orange: 'hsl(var(--portfolio-orange))',
+					dark: 'hsl(var(--portfolio-dark))',
+					gray: 'hsl(var(--portfolio-gray))',
+					'text-muted': 'hsl(var(--portfolio-text-muted))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
