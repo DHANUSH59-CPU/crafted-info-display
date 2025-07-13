@@ -1,14 +1,20 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, MapPin, Phone, Linkedin, Github, Download } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin, Github, Download, Code } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: Mail,
-      label: "Email",
-      value: "dhanushsheky@gmail.com",
-      href: "mailto:dhanushsheky@gmail.com"
+      label: "College Email",
+      value: "dhsr22aiml@cmrit.ac.in",
+      href: "mailto:dhsr22aiml@cmrit.ac.in"
+    },
+    {
+      icon: Mail,
+      label: "Personal Email",
+      value: "dhanushjoelucky@gmail.com",
+      href: "mailto:dhanushjoelucky@gmail.com"
     },
     {
       icon: Phone,
@@ -25,8 +31,8 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/dhanush-kumar-s11b94333",
-      href: "https://linkedin.com/in/dhanush-kumar-s11b94333"
+      value: "linkedin.com/in/dhanush-kumar-11b994333",
+      href: "http://www.linkedin.com/in/dhanush-kumar-11b994333"
     }
   ];
 
@@ -131,17 +137,23 @@ const Contact = () => {
             </Card>
 
             {/* Quick Links */}
-            <div className="flex gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <Button variant="outline" size="lg" className="flex-1" asChild>
-                <a href="https://github.com/dhanush" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/DHANUSH59-CPU" target="_blank" rel="noopener noreferrer">
                   <Github className="w-5 h-5 mr-2" />
                   GitHub
                 </a>
               </Button>
               <Button variant="outline" size="lg" className="flex-1" asChild>
-                <a href="https://linkedin.com/in/dhanush-kumar-s11b94333" target="_blank" rel="noopener noreferrer">
+                <a href="http://www.linkedin.com/in/dhanush-kumar-11b994333" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-5 h-5 mr-2" />
                   LinkedIn
+                </a>
+              </Button>
+              <Button variant="outline" size="lg" className="flex-1" asChild>
+                <a href="https://leetcode.com/u/zorodhanu/" target="_blank" rel="noopener noreferrer">
+                  <Code className="w-5 h-5 mr-2" />
+                  LeetCode
                 </a>
               </Button>
             </div>

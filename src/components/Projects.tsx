@@ -15,11 +15,11 @@ const Projects = () => {
         "Real-time movie data from TMDB",
         "Responsive design"
       ],
-      github: "https://github.com/dhanush",
-      live: "https://netflix-gpt-demo.com"
+      github: "https://github.com/DHANUSH59-CPU/netflix-gpt",
+      live: "https://my-project-aa529.web.app"
     },
     {
-      title: "DevMatch",
+      title: "Dev-Match",
       description: "A full-stack social platform for developers inspired by Tinder and LinkedIn, featuring real-time matching and messaging using Socket.IO.",
       technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.IO"],
       features: [
@@ -28,11 +28,11 @@ const Projects = () => {
         "Authentication system",
         "Connection management"
       ],
-      github: "https://github.com/dhanush/devmatch",
-      live: "https://devmatch-demo.com"
+      github: "https://github.com/DHANUSH59-CPU/dev-match",
+      live: "https://dev-match-major-project.vercel.app"
     },
     {
-      title: "Bolt-New SAAS Clone",
+      title: "Bolt Clone",
       description: "A full-stack SaaS application using React.js and Convex, enabling real-time data synchronization and dynamic content rendering.",
       technologies: ["React.js", "Redux Toolkit", "Tailwind CSS", "Convex", "OpenAI API"],
       features: [
@@ -41,8 +41,8 @@ const Projects = () => {
         "Modern UI/UX design",
         "Scalable architecture"
       ],
-      github: "https://github.com/dhanush/bolt-clone",
-      live: "https://bolt-clone-demo.com"
+      github: "https://github.com/DHANUSH59-CPU/bolt-clone",
+      live: "https://bolt-clone-2.vercel.app"
     }
   ];
 
