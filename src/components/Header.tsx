@@ -45,22 +45,21 @@ const Header = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-card border-t border-border">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="block px-3 py-2 text-muted-foreground hover:text-accent transition-colors duration-200"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </a>
-              ))}
-            </div>
+        <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-card border-t border-border">
+            {navItems.map((item, index) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className="block px-3 py-2 text-muted-foreground hover:text-accent transition-all duration-200 hover:translate-x-2 hover:scale-105"
+                onClick={() => setIsMenuOpen(false)}
+                style={{ animationDelay: `${index * 0.1}s` }}
+              >
+                {item.name}
+              </a>
+            ))}
           </div>
-        )}
+        </div>
       </div>
     </header>
   );
