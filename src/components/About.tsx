@@ -59,8 +59,8 @@ const About = () => {
               <h2 className="text-4xl font-bold text-foreground mb-6">About me</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  I am a passionate B.Tech Computer Science Engineering student at Ramgarh Engineering College, 
-                  graduating in 2026. My journey in software development started with a curiosity for creating 
+                  I am a passionate B.Tech Computer Science Engineering student at CMR Institute of Technology, 
+                  graduating in 2026 with a CGPA of 8.42. My journey in software development started with a curiosity for creating 
                   digital solutions that make a difference.
                 </p>
                 <p>
