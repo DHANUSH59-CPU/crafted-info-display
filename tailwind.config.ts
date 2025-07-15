@@ -90,11 +90,43 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'neural-pulse': {
+					'0%, 100%': {
+						opacity: '0.3',
+						transform: 'scale(1)'
+					},
+					'50%': {
+						opacity: '1',
+						transform: 'scale(1.1)'
+					}
+				},
+				'neural-flow': {
+					'0%': {
+						strokeDashoffset: '1000'
+					},
+					'100%': {
+						strokeDashoffset: '0'
+					}
+				},
+				'neural-float': {
+					'0%, 100%': {
+						transform: 'translateY(0px) rotate(0deg)'
+					},
+					'33%': {
+						transform: 'translateY(-10px) rotate(1deg)'
+					},
+					'66%': {
+						transform: 'translateY(5px) rotate(-1deg)'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'neural-pulse': 'neural-pulse 3s ease-in-out infinite',
+				'neural-flow': 'neural-flow 4s linear infinite',
+				'neural-float': 'neural-float 6s ease-in-out infinite'
 			}
 		}
 	},
