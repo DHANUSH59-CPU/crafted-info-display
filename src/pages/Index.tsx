@@ -3,12 +3,12 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
-import NeuralNetworkBackground from "@/components/NeuralNetworkBackground";
+import AdvancedNeuralNetworkBackground from "@/components/AdvancedNeuralNetworkBackground";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative">
-      <NeuralNetworkBackground />
+      <AdvancedNeuralNetworkBackground />
       <div className="relative z-10">
         <Header />
         <Hero />

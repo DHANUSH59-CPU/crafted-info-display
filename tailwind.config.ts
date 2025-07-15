@@ -119,6 +119,64 @@ export default {
 					'66%': {
 						transform: 'translateY(5px) rotate(-1deg)'
 					}
+				},
+				'ripple': {
+					'0%': {
+						transform: 'scale(0)',
+						opacity: '1'
+					},
+					'100%': {
+						transform: 'scale(4)',
+						opacity: '0'
+					}
+				},
+				'data-flow': {
+					'0%': {
+						transform: 'translateX(-100px)',
+						opacity: '0'
+					},
+					'10%': {
+						opacity: '1'
+					},
+					'90%': {
+						opacity: '1'
+					},
+					'100%': {
+						transform: 'translateX(100vw)',
+						opacity: '0'
+					}
+				},
+				'glow-pulse': {
+					'0%, 100%': {
+						filter: 'brightness(1) blur(0px)'
+					},
+					'50%': {
+						filter: 'brightness(1.5) blur(2px)'
+					}
+				},
+				'orbit': {
+					'0%': {
+						transform: 'rotate(0deg) translateX(50px) rotate(0deg)'
+					},
+					'100%': {
+						transform: 'rotate(360deg) translateX(50px) rotate(-360deg)'
+					}
+				},
+				'matrix-rain': {
+					'0%': {
+						transform: 'translateY(-100vh)',
+						opacity: '0'
+					},
+					'10%': {
+						opacity: '1'
+					},
+					'90%': {
+						opacity: '1'
+					},
+					'100%': {
+						transform: 'translateY(100vh)',
+						opacity: '0'
+					}
 				}
 			},
 			animation: {
@@ -126,7 +184,12 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'neural-pulse': 'neural-pulse 3s ease-in-out infinite',
 				'neural-flow': 'neural-flow 4s linear infinite',
-				'neural-float': 'neural-float 6s ease-in-out infinite'
+				'neural-float': 'neural-float 6s ease-in-out infinite',
+				'ripple': 'ripple 2s ease-out infinite',
+				'data-flow': 'data-flow 8s linear infinite',
+				'glow-pulse': 'glow-pulse 4s ease-in-out infinite',
+				'orbit': 'orbit 15s linear infinite',
+				'matrix-rain': 'matrix-rain 10s linear infinite'
 			}
 		}
 	},
