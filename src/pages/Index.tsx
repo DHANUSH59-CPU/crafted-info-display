@@ -8,14 +8,14 @@ import { SparklesCore } from "@/components/ui/sparkles";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-x-hidden">
-      <div className="w-full absolute inset-0 h-screen">
+      <div className="w-full absolute inset-0 min-h-full">
         <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
           minSize={0.6}
           maxSize={1.4}
-          particleDensity={100}
-          className="w-full h-full"
+          particleDensity={120}
+          className="w-full h-full min-h-screen"
           particleColor="#ffffff"
           speed={1}
         />
