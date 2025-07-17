@@ -16,7 +16,7 @@ const Index = () => {
           maxSize={1.4}
           particleDensity={100}
           className="w-full h-full"
-          particleColor="hsl(var(--primary))"
+          particleColor="#ffffff"
           speed={1}
         />
       </div>
