@@ -1,8 +1,10 @@
+
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
+import AnimatedSection from "@/components/AnimatedSection";
 import { SparklesCore } from "@/components/ui/sparkles";
 
 const Index = () => {
@@ -23,18 +25,18 @@ const Index = () => {
       <div className="relative z-10">
         <Header />
         <div className="space-y-0">
-          <div className="animate-fade-in">
+          <AnimatedSection>
             <Hero />
-          </div>
-          <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          </AnimatedSection>
+          <AnimatedSection delay={200}>
             <About />
-          </div>
-          <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          </AnimatedSection>
+          <AnimatedSection delay={400}>
             <Projects />
-          </div>
-          <div className="animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          </AnimatedSection>
+          <AnimatedSection delay={600}>
             <Contact />
-          </div>
+          </AnimatedSection>
         </div>
       </div>
     </div>
