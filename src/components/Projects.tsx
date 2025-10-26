@@ -6,6 +6,19 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "AlgoMaster",
+      description: "A full-stack competitive programming and learning platform enabling users to solve coding problems, track progress, and prepare for interviews with secure JWT-based authentication.",
+      technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Redis", "JWT", "Mailtrap"],
+      features: [
+        "AI-powered question generation",
+        "User performance tracking with graphical insights",
+        "Interview preparation modules",
+        "Rate limiting and Redis caching",
+        "Email notifications via Mailtrap"
+      ],
+      live: "https://algomaster-frontend-xy3n.onrender.com/"
+    },
+    {
       title: "Netflix-GPT",
       description: "A Netflix clone enhanced with GPT-powered movie recommendations. Features user authentication using Firebase and integrates with TMDB API for real-time movie data.",
       technologies: ["React.js", "Redux Toolkit", "Firebase", "TMDB API", "Tailwind CSS"],
@@ -97,13 +110,15 @@ const Projects = () => {
 
                 {/* Links */}
                 <div className="flex gap-3 pt-4">
-                  <Button variant="outline" size="sm" className="flex-1" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="w-4 h-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
-                  <Button size="sm" className="flex-1 bg-accent hover:bg-accent/90" asChild>
+                  {project.github && (
+                    <Button variant="outline" size="sm" className="flex-1" asChild>
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github className="w-4 h-4 mr-2" />
+                        Code
+                      </a>
+                    </Button>
+                  )}
+                  <Button size="sm" className={project.github ? "flex-1" : "w-full"} asChild>
                     <a href={project.live} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Live Demo
